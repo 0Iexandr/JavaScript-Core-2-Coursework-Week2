@@ -16,8 +16,12 @@ let store = [
 
 let money = 1.5;
 
-let thingsICanBuy =
-  /* todo */
+let thingsICanBuy = store.filter(function(array) {
+  return array.price <= money});
+
+thingsICanBuy = thingsICanBuy.map(function(array) {
+  return array.item;
+});
 
   // DO NOT EDIT BELOW THIS LINE
   console.log(
